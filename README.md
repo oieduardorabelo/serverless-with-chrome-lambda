@@ -4,7 +4,7 @@ Main takeaways:
 
 ### 1 - Serverless Framework Packaging
 
-As described in the [Serverless Framework Packaing Guide](https://www.serverless.com/framework/docs/providers/aws/guide/packaging/): "...Serverless will auto-detect and exclude development dependencies based on the runtime your service is using.", that means, for Node.js projects, everything inside `devDependencies` **will not be included** in your bundle.
+As described in the [Serverless Framework Packaing Guide](https://www.serverless.com/framework/docs/providers/aws/guide/packaging/)", Serverless Framework will auto-detect and exclude development dependencies based on the runtime your service is using.", that means, for Node.js projects, everything inside `devDependencies` **will not be included** in your bundle.
 
 In our case, we do want to deploy our main packages, we need to declare in our `package.json`:
 
