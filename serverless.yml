@@ -1,0 +1,19 @@
+service:
+  name: serverless-with-chrome-lambda
+
+provider:
+  apiGateway:
+    binaryMediaTypes:
+      - '*/*'
+  name: aws
+  region: ap-southeast-2
+  runtime: nodejs12.x
+  stage: dev
+
+functions:
+  getPdf:
+    handler: functions/get-pdf.handler
+    events:
+      - http:
+          method: get
+          path: /pdf
