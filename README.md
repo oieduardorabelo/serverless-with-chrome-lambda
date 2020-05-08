@@ -1,4 +1,4 @@
-# Serverless Framework - Generate PDF in AWS Lambda with Chromium and Mustache
+# Serverless Framework - Create PDF in AWS Lambda with Chromium and Mustache
 
 Main takeaways:
 
